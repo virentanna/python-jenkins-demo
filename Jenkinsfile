@@ -10,7 +10,6 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing required python packages...'
-                # This installs the tools locally inside Jenkins
                 bat 'pip install -r requirements.txt'
             }
         }
