@@ -1,9 +1,8 @@
-from app import add_numbers
+from app import check_website_status
 
-def test_addition():
-    # This checks if our function works correctly
-    assert add_numbers(5, 5) == 10
-    print("Test passed successfully!")
+def test_status():
+    assert check_website_status() == 200
+    print("Dependency test passed successfully!")
 
 if __name__ == "__main__":
-    test_addition()
+    test_status()
