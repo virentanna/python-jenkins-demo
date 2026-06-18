@@ -2,7 +2,8 @@ import requests
 
 def check_website_status():
     # This uses our new dependency to check a website
-    response = requests.get("https://httpbin.org")
+    response = requests.get("https://reqres.in")
+    print(response.status_code)
     return response.status_code
 
 if __name__ == "__main__":
