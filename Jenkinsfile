@@ -14,4 +14,12 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo 'Cleaning up the workspace...'
+            // This deletes the downloaded files so your laptop drive stays clean
+            cleanWs()
+        }
+    }
 }
